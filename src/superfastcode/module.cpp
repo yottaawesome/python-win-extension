@@ -1,6 +1,7 @@
+#define PY_SSIZE_T_CLEAN
 #include <Windows.h>
-#include <cmath>
 #include <Python.h>
+#include <cmath>
 
 const double e = 2.7182818284590452353602874713527;
 

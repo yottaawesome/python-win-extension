@@ -1,4 +1,4 @@
-# python-win-extension
+# A simple Win32 extension for Python
 
 ## Introduction
 
@@ -6,13 +6,16 @@ This is a just a quick-and-dirty example of a simple Python native extension on 
 
 ## Using this repo
 
-This extension was based on . To run this repo, you'll need:
+To run this repo, you'll need:
 
-* VS Community 2019 with "Desktop Development with C++" and "Python development" workloads. With the Python workload, you'll need _miniconda_, _Python native development tools_, and a Python 3 64-bit environment. Make note of where VS installs your Python environment (on my machine, VS installed Python into _A:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64_).
+* Install VS Community 2019 with "Desktop Development with C++" and "Python development" workloads.
+  * With the Python workload, you'll need _miniconda_ (for creating a virtual environment), _Python native development tools_, and a Python 3 64-bit environment.
+  * Make note of where VS installs your Python environment (on my machine, VS installed Python into _A:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64_).
 * Set the build to x64 and configuration to Release when opening the Solution.
-* In the superfast project properties, you'll also need to:
-  * Update _VC++ Directories_ > _Include Directories_ to your location of your Python installation include folder.
-  * Update _Linker_ > _Additional Library Directories_ to the location of your Python installation lib folder.
+* Create an x64 Python 3 environment named `env` in VS under _PythonExtension_ project > _Python Environments_.
+* In the _superfast_ project's properties, you'll also need to:
+  * Update _VC++ Directories_ > _Include Directories_ to the location of your Python installation's (as per above) include folder.
+  * Update _Linker_ > _Additional Library Directories_ to the location of your Python installation's lib folder.
 
 ## Useful resources
 

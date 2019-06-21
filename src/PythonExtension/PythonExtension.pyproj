@@ -5,8 +5,7 @@
     <ProjectGuid>cad1e0b3-3a45-4cb9-a3ab-6201ae9cbd29</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>PythonExtension.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>..\build\x64\Release</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonExtension</Name>

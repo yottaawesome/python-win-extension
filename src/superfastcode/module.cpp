@@ -36,6 +36,8 @@ static PyModuleDef superfastcode_module = {
 	superfastcode_methods                   // Structure that defines the methods of the module
 };
 
-PyMODINIT_FUNC PyInit_superfastcode() {
+//PyMODINIT_FUNC expands to extern "C" __declspec(dllexport) PyObject*
+PyMODINIT_FUNC PyInit_superfastcode() 
+{
 	return PyModule_Create(&superfastcode_module);
 }
